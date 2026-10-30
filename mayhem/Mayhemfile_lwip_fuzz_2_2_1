@@ -1,0 +1,9 @@
+project: savantenvs/rt-thread
+target: lwip_fuzz_2_2_1
+cmds:
+  - cmd: /mayhem/lwip_fuzz_2_2_1 @@
+    afl: true
+    timeout: 10
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/lwip_fuzz_2_2_1/testsuite
