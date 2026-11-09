@@ -1,0 +1,9 @@
+project: savantenvs/rt-thread
+target: at_gethostbyname-mined-5d1aee9
+cmds:
+  - cmd: /mayhem/at_gethostbyname
+    libfuzzer: true
+    timeout: 10
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/at_gethostbyname-mined-5d1aee9/testsuite

@@ -1,0 +1,27 @@
+gethostbyname "192.168.1.10" -> 192.168.1.10 192.168.1.10
+gethostbyname_r "192.168.1.10" -> 192.168.1.10 192.168.1.10
+getaddrinfo "192.168.1.10" -> 192.168.1.10 192.168.1.10
+gethostbyname "255.255.255.255" -> 255.255.255.255 255.255.255.255
+gethostbyname_r "255.255.255.255" -> 255.255.255.255 255.255.255.255
+getaddrinfo "255.255.255.255" -> 255.255.255.255 255.255.255.255
+gethostbyname "10.0.0.1" -> 10.0.0.1 10.0.0.1
+gethostbyname_r "10.0.0.1" -> 10.0.0.1 10.0.0.1
+getaddrinfo "10.0.0.1" -> 10.0.0.1 10.0.0.1
+gethostbyname "0.0.0.0" -> 0.0.0.0 0.0.0.0
+gethostbyname_r "0.0.0.0" -> 0.0.0.0 0.0.0.0
+getaddrinfo "0.0.0.0" -> 0.0.0.0 0.0.0.0
+gethostbyname "example.com" -> example.com 10.0.0.1
+gethostbyname_r "example.com" -> example.com 10.0.0.1
+getaddrinfo "example.com" -> example.com 10.0.0.1
+gethostbyname "a" -> a 10.0.0.1
+gethostbyname_r "a" -> a 10.0.0.1
+getaddrinfo "a" -> a 10.0.0.1
+gethostbyname "1.2.3" -> 1.2.3 1.2.0.3
+gethostbyname_r "1.2.3" -> 1.2.3 1.2.0.3
+getaddrinfo "1.2.3" -> 1.2.3 1.2.0.3
+gethostbyname "" -> not found
+gethostbyname_r "" -> failed
+getaddrinfo "" -> error
+gethostbyname "256.1.1.1" -> not found
+gethostbyname_r "256.1.1.1" -> failed
+getaddrinfo "256.1.1.1" -> error
