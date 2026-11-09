@@ -1,0 +1,4 @@
+# The build copies the whole checkout into /mayhem (incl. .git, which the grader needs), so tracked
+# files must stay. Only untracked build products are pruned from the context.
+mayhem/build
+ctrf-report.json

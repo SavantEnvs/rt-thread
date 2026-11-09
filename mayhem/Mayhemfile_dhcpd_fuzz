@@ -1,0 +1,9 @@
+project: savantenvs/rt-thread
+target: dhcpd_fuzz-mined-cd92c3d
+cmds:
+  - cmd: /mayhem/dhcpd_fuzz @@
+    afl: true
+    timeout: 10
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/dhcpd_fuzz-mined-cd92c3d/testsuite
